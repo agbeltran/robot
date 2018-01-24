@@ -68,10 +68,10 @@ public class MireotOperationTest extends CoreTest {
   public void testMireotImports() throws IOException, OWLOntologyCreationException {
 
     //test passes with ro-mireot-output.owl that doesn't include all the annotations for RO_0001000 as they come from the imported ontologies
-    //expectedPath = "/ro-mireot-output.owl";
+    expectedPath = "/ro-mireot-output.owl";
 
     //test fails with ro-mireot.owl that is the correct generated module with the MIREOT method AFAIK
-    expectedPath = "/ro-mireot.owl";
+    //expectedPath = "/ro-mireot.owl";
 
     OWLOntology inputOntology = loadOntology("/ro-filtered.owl");
 
